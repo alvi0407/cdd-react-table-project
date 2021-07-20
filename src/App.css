@@ -1,38 +1,51 @@
-.App {
+.heading{
+  margin-top: 40px;
+  color: #333333;
+  font-size: 40px;
+}
+
+.add-row-btn{
+  padding: 5px 10px;
+  font-family: inherit;
+  font-size: 17px;
+  background-color: #baece5;
+  border: none;
+  border-radius: 3px;
+  position: relative;
+  display: inline-block;
+}
+
+.add-row-btn:hover{
+  cursor: pointer;
+}
+
+.add-row-btn .tooltip{
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  background-color: lightblue;
+  color: #333333;
   text-align: center;
+  top: -5px;
+  right: 105%;
+  width: 120px;
+  border-radius: 3px;
+  padding: 3px;
+  margin: 3px;
+  font-size: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.add-row-btn:hover .tooltip{
+  visibility: visible;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-row-btn .tooltip::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent lightblue;
 }

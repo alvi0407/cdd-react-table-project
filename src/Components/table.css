@@ -1,0 +1,93 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 30px 0px;
+}
+
+table td,
+table th {
+  border: 1px solid white;
+  text-align: center;
+  height: 55px;
+}
+
+table td{
+  color: #1b1b1b;
+}
+
+table tr:nth-child(even) {
+  background-color: #baece5;
+}
+
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th{
+  padding: 12px 3px;
+  text-align: center;
+  background-color: 	#008081;
+  color: white;
+}
+
+.filter{
+  padding: 20px 20px;
+  font-size: 25px;
+}
+
+.filter input{
+  font-size: 20px;
+
+}
+
+.pagination{
+  margin-bottom: 20px;
+  color: #333333;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.page-no{
+  padding-top: 5px;
+}
+
+.goto-btn input{
+  width: 50px;
+  text-align: center;
+  height: 25px;
+  font-weight: 550;
+
+}
+
+.pagination button{
+  width: fit-content;
+  height: 30px;
+  background-color: #baece5;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.pagination button:hover{
+  cursor: pointer;
+}
+
+select{
+  color: #333333;
+  text-align: center;
+  height: 30px;
+  font-weight: 550;
+}
+
+.edit-input{
+  border:none;
+  text-align: center;
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  font-weight: inherit;
+}
