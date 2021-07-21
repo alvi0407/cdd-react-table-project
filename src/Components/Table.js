@@ -1,19 +1,15 @@
-import React, { useMemo, useState } from 'react';
+import React from 'react';
 import { useTable, useGlobalFilter, usePagination } from 'react-table';
-import { COLUMN } from './column_s';
 import { GlobalFilter } from './GlobalFilter';
-import MOCK_DATA from './MOCK_DATA.json'
 import './table.css';
 import FirstPageIcon from '@material-ui/icons/FirstPage';
 import LastPageIcon from '@material-ui/icons/LastPage';
-import { EditableCell } from './EditableCell';
 
 
 export const Table = ({cols,data_, updateMyData, skipPageReset }) => {
 
-    //const columns = useMemo(() => COLUMN, [])
+    
     const columns=cols;
-    //const data = useMemo(() => MOCK_DATA, [])
     const data = data_;
 
 
